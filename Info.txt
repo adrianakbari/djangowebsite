@@ -1,0 +1,20 @@
+Blog templates:
+https://bootstrapmade.com/demo/Personal/
+https://bootstrapmade.com/demo/iPortfolio/
+https://startbootstrap.com/theme/grayscale
+
+youtube tutorial
+https://www.youtube.com/watch?v=HWg3zXWwre8&feature=youtu.be&ab_channel=JustDjango
+
+Traffic Analysis:
+https://pypi.org/project/django-tracking-analyzer/
+
+testimonials: 
+Koen Lim
+Zaher Sorour
+Marc from SSC de kempen
+Erik de Jonge
+Albert
+Erwin
+Vincent
+Jannes PWN

@@ -1,0 +1,23 @@
+{
+  "python.pythonPath": "C:\\Users\\Gebruiker\\anaconda3\\envs\\blog\\python.exe",
+  "editor.formatOnSave": true,
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_django"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.venvPath": "${workspaceFolder}/env/bin/python3",
+  "python.linting.pycodestyleArgs": [
+    "--ignore=E501"
+  ],
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "terminal.integrated.shellArgs.windows": [
+    "/K",
+    "C:\\Users\\Gebruiker\\anaconda3\\Scripts\\activate.bat C:\\Users\\Gebruiker\\anaconda3"
+  ],
+  "python.condaPath": "\"C:\\Users\\Gebruiker\\anaconda3\\_conda.exe\""
+}

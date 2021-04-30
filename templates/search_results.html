@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2>This is the results of your search</h2>
+{% if blogQueryset %}
+<p> Search Results in Blog posts</p>
+{% for post in blogQueryset %}
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+    <br />
+{% endfor %}
+{% endif %}
+</br>
+{% if galleryQueryset %}
+<p> Search Results in Gallery posts</p>
+{% for post in galleryQueryset %}
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+{% endfor %}
+{% endif %}
+</br>
+{% if projectsQueryset %}
+<p> Search Results in Projects posts</p>
+{% for post in projectsQueryset %}
+    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+    <br />
+{% endfor %}
+{% endif %}
+
+{% endblock %}
