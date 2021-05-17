@@ -78,15 +78,12 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'blog',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djangoblog',
         'USER': 'django',
-        'PASSWORD': 'dj!SqlSrv',
-        'HOST': 'DESKTOP-II83LBH\SQLEXPRESS',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',
-        },
+        'PASSWORD': 'djangoPassNew',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     },
 }
 
