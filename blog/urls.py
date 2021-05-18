@@ -40,8 +40,6 @@ urlpatterns = [
     path('resume/', resume, name='resume'),
     path('email-signup/', email_list_signup, name='email-list-signup'),
     path('tinymce/', include('tinymce.urls')),
-    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes': True, }),
-    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT, 'show_indexes': True, }),
     path('accounts/', include('allauth.urls')),
     # -----------Post Blog Urls-------------------
     # path('blog/', post_list, name='post-list'),
