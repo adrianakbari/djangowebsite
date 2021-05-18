@@ -1,4 +1,5 @@
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,7 +13,7 @@ SECRET_KEY = 'k*b$$!%hiswnhp2pad)6(u4x_g)r5w%@&zlv&@2hrz4#f3+#57'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'shielded-temple-04378.herokuapp.com']
+ALLOWED_HOSTS = ['shielded-temple-04378.herokuapp.com']
 
 
 # Application definition
@@ -173,3 +174,5 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
+
+django_heroku.settings(locals())
