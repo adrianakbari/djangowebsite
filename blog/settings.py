@@ -132,7 +132,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/r3tedi5bo8a2sbqkock7cp1gvvnkx4zoi6jyrcjjzy4pv499/tinymce/5/tinymce.min.js'
+TINYMCE_JS_URL = os.path.join(STATIC_URL, "tinymce/tinymce.min.js")
 TINYMCE_COMPRESSOR = False
 # Tinymce
 TINYMCE_DEFAULT_CONFIG = {
