@@ -136,14 +136,8 @@ TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/r3tedi5bo8a2sbqkock7cp1gvvnkx4zoi6jyr
 TINYMCE_COMPRESSOR = False
 # Tinymce
 TINYMCE_DEFAULT_CONFIG = {
-    'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 20,
     'selector': 'textarea.tinymcewidget',
-    'plugins': 'advlist,autolink,lists,link,image,charmap,print,preview,anchor,searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,code,help,wordcount',
-    'toolbar': 'undo redo | formatselect | ' 'bold italic backcolor | alignleft aligncenter ' 'alignright alignjustify | bullist numlist outdent indent | ' 'removeformat | help',
-    'contextmenu': 'formats | link image',
-    'menubar': False,
-    'statusbar': True,
+    'plugins': 'advlist link image lists',
 
 }
 
