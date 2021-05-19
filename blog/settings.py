@@ -139,18 +139,10 @@ TINYMCE_DEFAULT_CONFIG = {
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
     'selector': 'textarea.tinymcewidget',
-    'plugins': [
-    'advlist autolink link image lists charmap print preview hr anchor pagebreak',
-    'searchreplace wordcount visualblocks code fullscreen insertdatetime media nonbreaking',
-    'table emoticons template paste help'
-    ],
-    'toolbar1': '''
-            undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | ' +
-    'bullist numlist outdent indent | link image | print preview media fullpage | ' +
-    'forecolor backcolor emoticons | help
-            ''',
+    'plugins': 'advlist,autolink,lists,link,image,charmap,print,preview,anchor,searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,code,help,wordcount'
+    'toolbar': 'undo redo | formatselect | ' 'bold italic backcolor | alignleft aligncenter ' 'alignright alignjustify | bullist numlist outdent indent | ' 'removeformat | help',
     'contextmenu': 'formats | link image',
-    'menubar': True,
+    'menubar': False,
     'statusbar': True,
 
 }
