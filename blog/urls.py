@@ -5,15 +5,10 @@ from django.urls import path, include
 
 from posts.views import (
     search,
-    post_list,
-    post_detail,
     post_create,
-    post_update,
-    post_delete,
     IndexView,
     PostListView,
     PostDetailView,
-    PostCreateView,
     PostUpdateView,
     PostDeleteView
 )
