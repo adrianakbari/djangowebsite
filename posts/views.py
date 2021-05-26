@@ -265,25 +265,25 @@ def post_detail(request, id):
     return render(request, 'blog_post.html', context)
 
 
-class PostCreateView(CreateView):
-    model = Post
-    template_name = 'post_create.html'
-    form_class = PostForm
+# class PostCreateView(CreateView):
+#     model = Post
+#     template_name = 'post_create.html'
+#     form_class = PostForm
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['title'] = 'Create'
-        context['blog_form'] = PostForm
-        # context['gallery_form'] = GalleryForm
-        # context['experience_form'] =
-        return context
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         context['title'] = 'Create'
+#         context['blog_form'] = PostForm
+#         # context['gallery_form'] = GalleryForm
+#         # context['experience_form'] =
+#         return context
 
-    def form_valid(self, form):
-        form.instance.author = get_author(self.request.user)
-        form.save()
-        return redirect(reverse("blog-post-detail", kwargs={
-            'pk': form.instance.pk
-        }))
+#     def form_valid(self, form):
+#         form.instance.author = get_author(self.request.user)
+#         form.save()
+#         return redirect(reverse("blog-post-detail", kwargs={
+#             'pk': form.instance.pk
+#         }))
 
 
 def post_create(request):
