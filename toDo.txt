@@ -1,5 +1,5 @@
 Cross Browser Testing:
-- DONE! claro babyyyyyy!
+- DONE! claro babyyyyyyu!
 check list to launch to production:
 1. take and upload the one last picture
 2. make the site production ready (look at Django's and MDN docs)
