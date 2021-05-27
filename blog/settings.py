@@ -136,7 +136,28 @@ TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/r3tedi5bo8a2sbqkock7cp1gvvnkx4zoi6jyr
 TINYMCE_COMPRESSOR = False
 # Tinymce
 TINYMCE_DEFAULT_CONFIG = {
-    'selector': 'textarea.tinymcewidget'
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 20,
+    'selector': 'textarea.tinymcewidget',
+    'plugins': '''
+             save link image media preview codesample 
+            table code lists fullscreen  insertdatetime  nonbreaking
+             directionality searchreplace wordcount visualblocks
+            visualchars code fullscreen autolink lists  charmap print  hr
+            anchor pagebreak
+            ''',
+    'toolbar1': '''
+            fullscreen preview bold italic underline | fontselect,
+            fontsizeselect  | forecolor backcolor | alignleft alignright |
+            aligncenter alignjustify | indent outdent | bullist numlist table |
+            | link image media | codesample |
+            ''',
+    'toolbar2': '''
+            visualblocks visualchars |
+            charmap hr pagebreak nonbreaking anchor |  code |
+            ''',
+    'menubar': True,
+    'statusbar': True,
 }
 
 MAILCHIMP_API_KEY = ''
