@@ -635,6 +635,7 @@ section.hero {
   background: #e3e7ea url(../img/meInOffice.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 section.hero .container {
@@ -681,6 +682,12 @@ section.hero .continue i {
 @media (max-width: 767px) {
   section.hero .container {
     padding: 150px 20px;
+  }
+}
+@media (min-width: 992px) {
+  section.hero {
+    height: 105vh;
+    padding: 0;
   }
 }
 
