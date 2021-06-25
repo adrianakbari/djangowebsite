@@ -23,10 +23,12 @@
                     <a href="#">{{ cat }}</a>
                     {% endfor %}
                   </div> {% endcomment %}
+                  {% if request.user.is_staff %}
                   <div>
                     <a href="{% url 'gallery-post-update' pk=post.pk %}">Update</a>
                     <a href="{% url 'gallery-post-delete' pk=post.pk %}">Delete</a>
                   </div>
+                  {% endif %}
                 </div>
                 <h1>{{ post.title }}<a href="#"><i class="fa fa-bookmark"></i></a></h1>
                 <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" class="author d-flex align-items-center flex-wrap">
