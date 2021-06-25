@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get(
 print('secret key = {}'.format(SECRET_KEY))
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'True'
+DEBUG = os.environ.get('DJANGO_DEBUG', '')
 print('debug: {}'.format(DEBUG))
 
 ALLOWED_HOSTS = ['shielded-temple-04378.herokuapp.com', 'adrianakbari.com']
