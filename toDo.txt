@@ -1,8 +1,10 @@
 Cross Browser Testing:
 - DONE! claro babyyyyyyu!
 check list to launch to production:
-1. take and upload the one last picture
-2. make the site production ready (look at Django's and MDN docs)
-3. Buy a Domain
-4. Publishing to a hosting provider such as Heruko or others.
+1. Xtake and upload the one last picture
+2. Xmake the site production ready (look at Django's and MDN docs)
+3. XBuy a Domain
+4. XPublishing to a hosting provider such as Heruko or others.
 5. BOOOOM!
+
+Bug1= after re-pushing to heroku the thumbnails (media's) of the projects, blogs and gallery is not loaded. basically the media folder of the local (blogRemoteLinux) and heroku are not in sync.
