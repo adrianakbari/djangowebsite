@@ -692,6 +692,170 @@ section.hero .continue i {
 }
 
 /*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.projects {
+  /* background: #040404 url(../img/spotlight_side.jpg) top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;  */
+  /* height: 75vh; */
+  /* z-index: -1; */
+  /* background: rgba(0, 0, 0, 0.9);*/
+  padding: 30px;
+}
+
+.projects .row{
+  min-height: 20rem;  
+}
+.projects img{
+    width: 350px;
+    height: 400px;
+    /* max-width: 400px;
+    max-height: 400px;
+    min-width: 200px;
+    min-height: 400px; */
+    box-shadow: 0 0 60px 0px #ffffff, /* inner white */ 0 0 100px 30px #ffffff7d, /* middle transparent */ 0 0 140px 60px #ffffff00 /* end complete transparent */;
+    border-radius: 10px;
+}
+.projects .projects-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+.projects a{
+    /* width: inherit; */
+    /* height: inherit; */
+    /* max-width: 150px; */
+    /* max-height: 150px; */
+    min-width: 75px;
+    min-height: 75px;
+    color: rgb(255, 255, 255);
+}
+
+.projects .projects-wrap {
+  transition: 0.3s;
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 1;
+  background: rgb(0 0 0 / 0%);
+  margin-bottom: 5px;
+}
+
+.projects .projects-wrap::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.projects .projects-wrap .projects-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7f8f8;
+}
+
+.projects .projects-wrap .projects-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.projects .projects-wrap .projects-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.projects .projects-wrap .projects-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.projects .projects-wrap .projects-info p {
+  color: #ffffff;
+  font-size: 13px;
+  /* text-transform: uppercase; */
+  padding: 5px;
+  margin: 5px;
+}
+
+.projects .projects-wrap .projects-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.projects .projects-wrap .projects-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.projects .projects-wrap .projects-links a:hover {
+  color: #63eda3;
+}
+
+.projects .projects-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.projects .projects-wrap:hover .projects-info {
+  opacity: 1;
+}
+
+.projects .projects-wrap:hover .projects-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.projects .projects-wrap:hover .projects-info::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+/*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume {
