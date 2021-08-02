@@ -1244,7 +1244,41 @@ section.hero .continue i {
   background: #16ded1;
   margin: 4px 10px;
 }
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients::before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  display: inline-block;
+  background: #16ded1;
+  margin: 4px 10px;
+}
+.clients {
+  background: #040404 url("../img/adrian_akbari-11.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
 
+.clients .clients-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.clients .clients-item {
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Honors and Awards
 --------------------------------------------------------------*/
